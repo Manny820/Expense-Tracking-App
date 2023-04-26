@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/income_item"
+        android:title="Income" />
+    <item android:id="@+id/bills_item"
+        android:title="Bills" />
+    <item android:id="@+id/donation_item"
+        android:title="Donation" />
+    <item android:id="@+id/entertainment_item"
+        android:title="Entertainment" />
+    <item android:id="@+id/food_item"
+        android:title="Food" />
+    <item android:id="@+id/shopping_item"
+        android:title="Shopping" />
+    <item android:id="@+id/housing_item"
+        android:title="Housing" />
+    <item android:id="@+id/transportation_item"
+        android:title="Transportation" />
+    <item android:id="@+id/other_item"
+        android:title="Other" />
+
+</menu>

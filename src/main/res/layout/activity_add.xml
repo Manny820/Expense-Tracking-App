@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="407dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="#35B4D3"
+        android:backgroundTintMode="add"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/transactionsButton"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:background="#00FFFFFF"
+            android:foreground="@drawable/list"
+            android:foregroundTint="#FBFBFB"
+            android:onClick="launchTransactionsActivity"
+            android:translationY="5dp" />
+
+        <Button
+            android:id="@+id/categoriesButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:background="#00FFFFFF"
+            android:foreground="@drawable/categories"
+            android:foregroundTint="#FBFBFB"
+            android:onClick="launchCategoriesActivity"
+            android:translationX="245dp"
+            android:translationY="12dp" />
+
+        <TextView
+            android:id="@+id/AddTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/addTransaction"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="#C6C6C6"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="18dp"
+        android:background="#C6C6C6"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/date"
+        android:inputType="date"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:background="#C6C6C6"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/amount"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <TextView
+        android:id="@+id/editTextCategory"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="18dp"
+        android:background="#C6C6C6"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/category"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextAmount"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="376dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="18dp"
+        android:background="#C0D9DA"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/description"
+        android:inputType="textShortMessage|textLongMessage|textMultiLine|textPersonName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAmount" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#35B4D3"
+        android:backgroundTintMode="add"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescription" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
