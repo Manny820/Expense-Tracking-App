@@ -5,7 +5,7 @@
 <div class="overview"> 
   <p>Here is an overview of my Expense Tracking Application with informative descriptions and UI examples explaining
       how each feature works and how a user would interact with it. It is able to keep track of user inputted transactions, 
-      categorize them, and store them for later viewing or modifications.</p>
+      categorize them, and store them for later viewing or modifications. This application was built primarily in JAVA            using Andriod Studio IDE.</p>
 </div>
 
 <div class="home-page">
